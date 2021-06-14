@@ -3,7 +3,7 @@
 #include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
 
-#define DHTPIN D3  
+#define DHTPIN D4
 #define DHTTYPE DHT11
 
 DHT dht(DHTPIN, DHTTYPE);
