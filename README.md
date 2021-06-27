@@ -124,7 +124,7 @@ soft-ui-dashboard
 
 Abaixo alguns dos programas e tecnologias usadas para o desenvolvimento dos projetos:
 
-<img src="https://logodownload.org/wp-content/uploads/2019/03/arduino-logo-5.png" width="64" height="120"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Logo-tinkercad-wordmark.svg/1200px-Logo-tinkercad-wordmark.svg.png" width="64" height="120"> <img src="https://piolabs.com/assets/img/platformio-labs-logo-horizontal.png" width="64" height="120"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" width="64" height="120"> <img src="https://mqtt.org/assets/downloads/mqtt-logo.png" width="64" height="120">
+<img src="https://logodownload.org/wp-content/uploads/2019/03/arduino-logo-5.png" width="80" height="80"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Logo-tinkercad-wordmark.svg/1200px-Logo-tinkercad-wordmark.svg.png" width="80" height="80"> <img src="https://piolabs.com/assets/img/platformio-labs-logo-horizontal.png" width="180" height="80"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" width="80" height="80"> <img src="https://mqtt.org/assets/downloads/mqtt-logo.png" width="80" height="80">
 
 ## Resources
 - [Live Preview](https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud)
