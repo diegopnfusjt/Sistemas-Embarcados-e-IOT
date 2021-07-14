@@ -2,7 +2,7 @@
 #include <PZEM004Tv30.h>
 #include <Wire.h> 
 
-PZEM004Tv30 pzem2(D5, D6);
+PZEM004Tv30 pzem(D5, D6);
 
 char ssid[] = "AP@net";  //Enter your WIFI Name
 char pass[] = "";  //Enter your WIFI Password
@@ -11,25 +11,36 @@ void setup()
 {
   Serial.begin(115200);
 
+  Serial.print("Reiniciar Energia");
+  pzem.resetEnergy();
 }
 
 void loop() {
   //energymeter 2
-  float voltage2 = pzem2.voltage();
-  float current2 = pzem2.current();
-  float power2 = pzem2.power();
-  float energy2 = pzem2.energy();
-  float frequency2 = pzem2.frequency();
-  float pf2 = pzem2.pf();
-  Serial.println();
-  Serial.println();
-  Serial.println("tensao");
-  Serial.print(voltage2);
-  Serial.println();
-  Serial.println("corrente");
-  Serial.print(current2);
-  Serial.println();
-  Serial.println("frequencia");
-  Serial.print(frequency2);
-  delay(4000);
+  float tensao = pzem.voltage();
+  Serial.print("Tensao (V): ");
+  Serial.println(tensao);
+  
+  float corrente = pzem.current();
+  Serial.print("Corrente (A): ");
+  Serial.println(corrente);
+  
+  float potencia = pzem.power();
+  Serial.print("Potencia (W): ");
+  Serial.println(potencia);
+  
+  float potenciahora = pzem.energy();
+  Serial.print("Potencia/hora (KWh): ");
+  Serial.println(potenciahora);
+  
+  float frequencia = pzem.frequency();
+  Serial.print("Frquencia (Hz): ");
+  Serial.println(frequencia);
+  
+  float fatorpotencia = pzem.pf();
+  Serial.print("Fator de potencia: ");
+  Serial.println(fatorpotencia);
+  Serial.println(" ");
+  
+  delay(10000); // 10 segundos
 }
