@@ -21,12 +21,11 @@ void setup()
   Serial.println("Conectado :)");
 
   Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
-  Serial.print("Reiniciar Energia");
+  //Serial.print("Reiniciar Energia"); -- zera leitura do pzem004t
   pzem.resetEnergy();
 }
 
 void loop() {
-  //energymeter 2
   
   float tensao = pzem.voltage();
   Serial.print("Tensao (V): ");
